@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_iniciou">
+
+    <fragment
+        android:id="@+id/nav_iniciou"
+        android:name="com.example.proyectofinal.modulousuario.iniciou.inicioUFragment"
+        android:label="@string/menu_home" />
+
+    <fragment
+        android:id="@+id/nav_animalu"
+        android:name="com.example.proyectofinal.modulousuario.animalesu.animalesUFragment"
+        android:label="@string/menu_animales"
+        tools:layout="@layout/fragment_animalesu" />
+
+    <fragment
+        android:id="@+id/nav_zoou"
+        android:name="com.example.proyectofinal.modulousuario.zoou.zooUFragment"
+        android:label="@string/menu_zoologico"
+        tools:layout="@layout/fragment_zoou" />
+
+    <fragment
+        android:id="@+id/nav_ticketsu"
+        android:name="com.example.proyectofinal.modulousuario.ticketsu.ticketsUFragment"
+        android:label="@string/menu_zoologico"
+        tools:layout="@layout/fragment_ticketsu" />
+</navigation>

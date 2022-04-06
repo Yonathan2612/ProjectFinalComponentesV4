@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo5"
+    tools:context=".moduloadministrador.zooa.zooAFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="315dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="48dp"
+        android:contentDescription="@string/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/corner_image" />
+
+    <EditText
+        android:id="@+id/editTextMoneda"
+        android:layout_width="245dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="5dp"
+        android:autofillHints=""
+        android:background="@drawable/corner_txt"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:text="@string/moneda"
+
+        android:textColor="#B4B4B4"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textAdjunto"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTam"
+        android:layout_width="245dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/corner_txt"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:text="@string/tamaño"
+        android:textColor="#B4B4B4"
+
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMoneda"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextCiudad"
+        android:layout_width="245dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/corner_txt"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:text="@string/ciudad"
+        android:textColor="#B4B4B4"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTam"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextZoo"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextZoo"
+        android:layout_width="245dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_txt"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:text="@string/nombre_zoo"
+        android:textColor="#B4B4B4"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textAdjunto"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/corner_txt"
+        android:ems="10"
+        android:paddingTop="5dp"
+        android:text="@string/adjuntar"
+        android:textAlignment="center"
+        android:textColor="#B4B4B4"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnCargarZoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#9A9A9A"
+        android:gravity="center_vertical"
+        android:text="@string/cargar"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="222dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/corner_image"
+        android:text="@string/agregar_zoo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/corner_image" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="83dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#9A9A9A"
+        android:text="@string/buscar"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/textAdjunto"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMoneda"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="268dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="72dp"
+        android:contentDescription="@string/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCargarZoo"
+        tools:src="@drawable/corner_txt" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="255dp"
+        android:layout_height="83dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:text="Observaciones:
+1. El tamaño del Zoologico debe ser digitado en metros cuadrados.
+                                                2. El presupuesto anual es opcional."
+        android:textAlignment="textStart"
+        android:textColor="#B4B4B4"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.473"
+        tools:ignore="TextContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

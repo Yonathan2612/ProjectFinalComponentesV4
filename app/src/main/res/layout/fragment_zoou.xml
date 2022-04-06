@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    tools:context=".modulousuario.zoou.zooUFragment" >
+
+    <EditText
+        android:id="@+id/tamaZOO"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:background="#94FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="627dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="313dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:background="#7CFFFFFF"
+        android:text="ZOOLOGICOS NACIONALES"
+        android:textAlignment="viewStart"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/especiesZOO"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:background="#94FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <EditText
+        android:id="@+id/nomZoo"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:background="#94FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="139dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="#6DFFFFFF"
+        android:text="Especies"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomZoo" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="139dp"
+        android:layout_height="28dp"
+        android:background="#6DFFFFFF"
+        android:text="Tamaño"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="139dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#6DFFFFFF"
+        android:text="Nombre"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarZOO" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="385dp"
+        android:layout_height="64dp"
+        android:background="#8FFFFFFF"
+        android:text="Digite el nombre del Zoologico que quiere vistar"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/btnBuscarZOO"
+        android:layout_width="227dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#B0423D3D"
+        android:text="Buscar"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <EditText
+        android:id="@+id/nomZoo2"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:background="#94FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre ZOO"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="181dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
