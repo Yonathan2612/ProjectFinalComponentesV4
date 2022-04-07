@@ -102,7 +102,7 @@ public class zooAFragment extends Fragment {
     private void insertarzoo(CRUDzoo ob)
     {
         // aqui se pone el link de la base de datos de la nube
-        StringRequest request = new StringRequest(Request.Method.POST, "https://compbdzoo.000webhostapp.com/insertarAnimal.php",
+        StringRequest request = new StringRequest(Request.Method.POST, "https://compbdzoo.000webhostapp.com/insertarZoo.php",
                 new Response.Listener<String>()
                 {
                     @Override

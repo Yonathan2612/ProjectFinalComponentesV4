@@ -89,7 +89,7 @@ public class animalesAFragment extends Fragment {
             {
                 Toast.makeText(getContext(), "Los campos no deben estar vacios", Toast.LENGTH_SHORT).show();
             }else if(animalesAFragment.isNumeric(txtIdentificacion.getText().toString())){
-                if(animalesAFragment.isNumeric(txtNacimiento.getText().toString()) && txtIdentificacion.getText().length()<5 || txtIdentificacion.getText().length()>3){
+                if(animalesAFragment.isNumeric(txtNacimiento.getText().toString()) && txtNacimiento.getText().length()<5 && txtNacimiento.getText().length()>3){
                 //llenando el objeto de animales enviandolo a la funcion insertar
                 CRUDanimales ob = new CRUDanimales();
                 ob.setnom_vulgar(txtNomVulgar.getText().toString().trim());

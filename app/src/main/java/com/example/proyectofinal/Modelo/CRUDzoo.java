@@ -36,7 +36,7 @@ public class CRUDzoo extends zooAFragment
     {
         boolean[] estado = {false};
 
-        StringRequest request = new StringRequest(Request.Method.POST, "https://compbdzoo.000webhostapp.com/insertarAnimal.php",
+        StringRequest request = new StringRequest(Request.Method.POST, "https://compbdzoo.000webhostapp.com/insertarZoologico.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

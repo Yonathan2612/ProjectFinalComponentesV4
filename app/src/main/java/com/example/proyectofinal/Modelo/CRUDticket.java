@@ -33,7 +33,7 @@ public class CRUDticket extends ticketsaFragment
     {
         boolean[] estado = {false};
 
-        StringRequest request = new StringRequest(Request.Method.POST, "https://compbdzoo.000webhostapp.com/insertarAnimal.php",
+        StringRequest request = new StringRequest(Request.Method.POST, "https://compbdzoo.000webhostapp.com/insertarTicket.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
