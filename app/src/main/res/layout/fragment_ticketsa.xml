@@ -115,6 +115,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
+    <Button
+        android:id="@+id/btnReportes"
+        android:layout_width="146dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#7E040404"
+        android:gravity="center_vertical"
+        android:text="Reportes"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:rippleColor="#72070707" />
+
     <TextView
         android:id="@+id/textView14"
         android:layout_width="279dp"
