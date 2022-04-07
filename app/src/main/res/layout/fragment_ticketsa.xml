@@ -23,7 +23,7 @@
         tools:src="@drawable/corner_image" />
 
     <EditText
-        android:id="@+id/editTextContraseña"
+        android:id="@+id/editTextPresupuesto"
         android:layout_width="245dp"
         android:layout_height="33dp"
         android:layout_marginBottom="20dp"
@@ -36,6 +36,7 @@
         android:textColor="#B4B4B4"
 
         android:textSize="14sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -56,14 +57,14 @@
         android:text="@string/precio"
         android:textColor="#B4B4B4"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextContraseña"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPresupuesto"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNom"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextUsuario"
+        android:id="@+id/editTextNom"
         android:layout_width="245dp"
         android:layout_height="33dp"
         android:layout_marginTop="20dp"

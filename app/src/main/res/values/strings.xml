@@ -60,6 +60,8 @@
     <string name="familia">Familia...</string>
     <string name="moneda">Moneda...</string>
     <string name="precio">Precio Ticket...</string>
+    <string name="presupuesto">Presupuesto anual...</string>
+    <string name="nit">Nit...</string>
     <string name="nombre_zoo">Nombre Zoologico...</string>
     <string name="extincion">¿En peligro de extinción?</string>
 

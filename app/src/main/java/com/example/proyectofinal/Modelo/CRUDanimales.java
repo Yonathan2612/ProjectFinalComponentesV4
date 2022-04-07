@@ -10,7 +10,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.proyectofinal.ActivityRegistrar;
+import com.example.proyectofinal.moduloadministrador.animalesa.animalesAFragment;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 
-public class CRUDanimales extends ActivityRegistrar
+public class CRUDanimales extends animalesAFragment
 {
     private String nom_vulgar,nom_cientifico,txtfamilia,txtextincion,txtidentificacion,txtespecie,txtgenero,txtnacimiento,txtzoo,txtpaisor,txtcontinente;
     public CRUDanimales(String nom_vulgar, String nom_cientifico, String txtfamilia, String txtextincion, String txtidentificacion, String txtespecie, String txtgenero, String txtnacimiento, String txtzoo, String txtpaisor, String txtcontinente)
@@ -86,7 +86,7 @@ public class CRUDanimales extends ActivityRegistrar
             }
         };
 
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        RequestQueue requestQueue = Volley.newRequestQueue(getContext());
         requestQueue.add(request);
 
 

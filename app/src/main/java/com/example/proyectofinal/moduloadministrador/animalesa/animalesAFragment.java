@@ -1,6 +1,5 @@
 package com.example.proyectofinal.moduloadministrador.animalesa;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,10 +20,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.proyectofinal.ActivityRegistrar;
 import com.example.proyectofinal.Modelo.CRUDanimales;
 import com.example.proyectofinal.R;
-import com.example.proyectofinal.databinding.FragmentAnimalesaBinding;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -32,138 +29,13 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.example.proyectofinal.databinding.FragmentAnimalesaBinding;
 
 
 public class animalesAFragment extends Fragment {
 
     private FragmentAnimalesaBinding binding;
     EditText txtNomVulgar,txtNomCientifico,txtFamilia,txtExtincion,txtIdentificacion,txtEspecie,txtGenero,txtNacimiento,txtZoo,txtPaisor,txtContinente;
-    Button btnCargarZoo;
-    public static List<CRUDanimales> lista = new List<CRUDanimales>() {
-            @Override
-            public int size() {
-                return 0;
-            }
-
-            @Override
-            public boolean isEmpty() {
-                return false;
-            }
-
-            @Override
-            public boolean contains(@Nullable Object o) {
-                return false;
-            }
-
-            @NonNull
-            @Override
-            public Iterator<CRUDanimales> iterator() {
-                return null;
-            }
-
-            @NonNull
-            @Override
-            public Object[] toArray() {
-                return new Object[0];
-            }
-
-            @NonNull
-            @Override
-            public <T> T[] toArray(@NonNull T[] a) {
-                return null;
-            }
-
-            @Override
-            public boolean add(CRUDanimales cruDanimales) {
-                return false;
-            }
-
-            @Override
-            public boolean remove(@Nullable Object o) {
-                return false;
-            }
-
-            @Override
-            public boolean containsAll(@NonNull Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public boolean addAll(@NonNull Collection<? extends CRUDanimales> c) {
-                return false;
-            }
-
-            @Override
-            public boolean addAll(int index, @NonNull Collection<? extends CRUDanimales> c) {
-                return false;
-            }
-
-            @Override
-            public boolean removeAll(@NonNull Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public boolean retainAll(@NonNull Collection<?> c) {
-                return false;
-            }
-
-            @Override
-            public void clear() {
-
-            }
-
-            @Override
-            public CRUDanimales get(int index) {
-                return null;
-            }
-
-            @Override
-            public CRUDanimales set(int index, CRUDanimales element) {
-                return null;
-            }
-
-            @Override
-            public void add(int index, CRUDanimales element) {
-
-            }
-
-            @Override
-            public CRUDanimales remove(int index) {
-                return null;
-            }
-
-            @Override
-            public int indexOf(@Nullable Object o) {
-                return 0;
-            }
-
-            @Override
-            public int lastIndexOf(@Nullable Object o) {
-                return 0;
-            }
-
-            @NonNull
-            @Override
-            public ListIterator<CRUDanimales> listIterator() {
-                return null;
-            }
-
-            @NonNull
-            @Override
-            public ListIterator<CRUDanimales> listIterator(int index) {
-                return null;
-            }
-
-            @NonNull
-            @Override
-            public List<CRUDanimales> subList(int fromIndex, int toIndex) {
-                return null;
-            }
-        };
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -183,7 +55,7 @@ public class animalesAFragment extends Fragment {
         txtGenero = root.findViewById(R.id.txtGenero);
         txtNacimiento = root.findViewById(R.id.txtNacimiento);
         txtZoo = root.findViewById(R.id.txtZoo);
-        txtPaisor = root.findViewById(R.id.txtPaisOr);
+        txtPaisor = root.findViewById(R.id.txtPaisor);
         txtContinente = root.findViewById(R.id.txtContinente);
         btnAgregar.setOnClickListener(this::onClick);
 
@@ -218,8 +90,7 @@ public class animalesAFragment extends Fragment {
                 Toast.makeText(getContext(), "Los campos no deben estar vacios", Toast.LENGTH_SHORT).show();
             }else
             {
-                //llenando el objeto de Usuario enviandolo a la funcion insertar
-
+                //llenando el objeto de animales enviandolo a la funcion insertar
                 CRUDanimales ob = new CRUDanimales();
                 ob.setnom_vulgar(txtNomVulgar.getText().toString().trim());
                 ob.setnom_cientifico(txtNomCientifico.getText().toString().trim());
@@ -230,13 +101,11 @@ public class animalesAFragment extends Fragment {
                 ob.settxtnacimiento(txtNacimiento.getText().toString().trim());
                 ob.settxtgenero(txtGenero.getText().toString().trim());
                 ob.settxtzoo(txtZoo.getText().toString().trim());
+                ob.settxtpaisor(txtPaisor.getText().toString().trim());
                 ob.settxtcontinente(txtContinente.getText().toString().trim());
                 insertarAnimal(ob);
-
             }
-            //direccionando el boton volver al login
         }
-
     }
     private void insertarAnimal(CRUDanimales ob)
     {
@@ -247,7 +116,6 @@ public class animalesAFragment extends Fragment {
                     @Override
                     public void onResponse(String response)
                     {
-
                         if(response.equalsIgnoreCase("Registro con éxito"))
                         {
                             Toast.makeText(getContext(), "Registro no fue éxitoso", Toast.LENGTH_SHORT).show();
