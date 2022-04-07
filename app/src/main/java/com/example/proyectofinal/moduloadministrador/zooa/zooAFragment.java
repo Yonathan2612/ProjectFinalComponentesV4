@@ -44,6 +44,7 @@ public class zooAFragment extends Fragment {
         editTextNomzoo = root.findViewById(R.id.editTextNomzoo);
         editTextPresupuesto = root.findViewById(R.id.editTextPresupuesto);
         editTextTamaño = root.findViewById(R.id.editTextTamaño);
+        btnAgregar.setOnClickListener(this::onClick);
 
         return root;
     }

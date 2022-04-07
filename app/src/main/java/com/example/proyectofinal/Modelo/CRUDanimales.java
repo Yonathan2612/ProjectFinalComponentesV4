@@ -255,83 +255,85 @@ public class CRUDanimales extends animalesAFragment
         return nom_vulgar;
     }
 
-    public void setnom_vulgar(String nombre) {
-        this.nom_vulgar = nombre;
+    public void setnom_vulgar(String nom_vulgar) {
+        this.nom_vulgar = nom_vulgar;
     }
 
     public String getnom_cientifico() {
         return nom_cientifico;
     }
 
-    public void setnom_cientifico(String correo) {
-        this.nom_cientifico = correo;
+    public void setnom_cientifico(String nom_cientifico) {
+        this.nom_cientifico = nom_cientifico;
     }
 
     public String gettxtfamilia() {
         return txtfamilia;
     }
 
-    public void settxtfamilia(String id) {
-        this.txtfamilia = id;
+    public void settxtfamilia(String txtfamilia) {
+        this.txtfamilia = txtfamilia;
     }
 
     public String gettxtextincion() {
         return txtextincion;
     }
 
-    public void settxtextincion(String password) {
-        this.txtextincion = password;
+    public void settxtextincion(String txtextincion) {
+        this.txtextincion = txtextincion;
     }
 
     public String gettxtidentificacion() {
         return txtidentificacion;
     }
 
-    public void settxtidentificacion(String tel) {this.txtidentificacion = tel;}
+    public void settxtidentificacion(String txtidentificacion) {this.txtidentificacion = txtidentificacion;}
 
     public String gettxtespecie() {
         return txtespecie;
     }
 
-    public void settxtespecie(String tel) {
-        this.txtespecie = tel;
+    public void settxtespecie(String txtespecie) {
+        this.txtespecie = txtespecie;
     }
 
     public String gettxtgenero() {
         return txtgenero;
     }
 
-    public void settxtgenero(String tel) {
-        this.txtgenero = tel;
+    public void settxtgenero(String txtgenero) {
+        this.txtgenero = txtgenero;
     }
+
     public String gettxtnacimiento() {
         return txtnacimiento;
     }
 
-    public void settxtnacimiento(String tel) {
-        this.txtnacimiento = tel;
+    public void settxtnacimiento(String txtnacimiento) {
+        this.txtnacimiento = txtnacimiento;
     }
+
     public String gettxtzoo() {
         return txtzoo;
     }
 
-    public void settxtzoo(String tel) {
-        this.txtzoo = tel;
+    public void settxtzoo(String txtzoo) {
+        this.txtzoo = txtzoo;
     }
 
     public String gettxtpaisor() {
         return txtpaisor;
     }
 
-    public void settxtpaisor(String tel) {
-        this.txtpaisor = tel;
+    public void settxtpaisor(String txtpaisor) {
+        this.txtpaisor = txtpaisor;
     }
 
     public String gettxtcontinente() {
         return txtcontinente;
     }
 
-    public void settxtcontinente(String tel) {
-        this.txtcontinente = tel;
+    public void settxtcontinente(String txtcontinente) {
+        this.txtcontinente = txtcontinente;
     }
 }

@@ -30,7 +30,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ticketsaFragment extends Fragment {
-    Button btnReportes;
     private FragmentTicketsaBinding binding;
     EditText editTextNom, editTextPrecio, editTextBuscarZoo;
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -41,10 +40,13 @@ public class ticketsaFragment extends Fragment {
         binding = FragmentTicketsaBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         final Button btnCargarTicket = (Button) root.findViewById(R.id.btnCargarTicket);
-        btnReportes.setOnClickListener(this::onClick);
+        final Button btnReportes = (Button) root.findViewById(R.id.btnReportes);
         editTextBuscarZoo=root.findViewById(R.id.editTextBuscarZoo);
         editTextNom=root.findViewById(R.id.editTextNom);
         editTextPrecio=root.findViewById(R.id.editTextPrecio);
+        btnCargarTicket.setOnClickListener(this::onClick);
+        btnReportes.setOnClickListener(this::onClick);
+
         return root;
     }
     private void onClick(View v) {

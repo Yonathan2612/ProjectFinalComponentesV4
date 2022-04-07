@@ -229,7 +229,7 @@ public class CRUDzoo extends zooAFragment
         return nit;
     }
 
-    public void setnit(String nombre) {
+    public void setnit(String nit) {
         this.nit = nit;
     }
 
@@ -237,7 +237,7 @@ public class CRUDzoo extends zooAFragment
         return nombreZoo;
     }
 
-    public void setnombreZoo(String correo) {
+    public void setnombreZoo(String nombreZoo) {
         this.nombreZoo = nombreZoo;
     }
 
@@ -245,7 +245,7 @@ public class CRUDzoo extends zooAFragment
         return tamano;
     }
 
-    public void settamano(String id) {
+    public void settamano(String tamano) {
         this.tamano = tamano;
     }
 
@@ -253,7 +253,7 @@ public class CRUDzoo extends zooAFragment
         return fk_ciudad;
     }
 
-    public void setfk_ciudad(String password) {
+    public void setfk_ciudad(String fk_ciudad) {
         this.fk_ciudad = fk_ciudad;
     }
 
@@ -261,6 +261,6 @@ public class CRUDzoo extends zooAFragment
         return presupuesto_anual;
     }
 
-    public void setpresupuesto_anual(String tel) {this.presupuesto_anual = presupuesto_anual;}
+    public void setpresupuesto_anual(String presupuesto_anual) {this.presupuesto_anual = presupuesto_anual;}
 
 }
