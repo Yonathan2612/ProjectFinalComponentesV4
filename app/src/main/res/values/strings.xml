@@ -75,9 +75,8 @@
     <string-array name="SpinnerTicketsA">
 
         <item>Seleccione el zoo...</item>
-        <item>ZOO2</item>
-        <item>ZOO3</item>
-        <item>zoo4</item>
+        <item>Zoologico Cali</item>
+        <item>Zoologico Nacional</item>
 
     </string-array>
     <string name="title_activity_usuario">UsuarioActivity</string>
