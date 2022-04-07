@@ -3,29 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/activity_admin.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/activity_inicio_usuario.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/activity_reportes.xml" value="0.12" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/activity_usuario.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/app_bar_activity_administrador.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/app_bar_usuario.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/content_activity_administrador.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/content_usuario.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/activity_reportes.xml" value="0.25" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_animalesa.xml" value="0.20729166666666668" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_animalesu.xml" value="0.20729166666666668" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_inicioa.xml" value="0.25" />
+        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_inicioa.xml" value="0.20729166666666668" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_iniciou.xml" value="0.20729166666666668" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_ticketsa.xml" value="0.22" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_ticketsu.xml" value="0.25" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_zooa.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_ticketsu.xml" value="0.1381340579710145" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_zoou.xml" value="0.20729166666666668" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/inicio_administrador.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/nav_header_activity_administrador.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/nav_header_usuario.xml" value="0.1381340579710145" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/menu/activity_admin_drawer.xml" value="0.21145833333333333" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/menu/activity_usuario_drawer.xml" value="0.21145833333333333" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/menu/menu_administrador.xml" value="0.21145833333333333" />
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/menu/usuario.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/activity_inicio_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/activity_reportes.xml" value="0.2015625" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/activity_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/app_bar_activity_administrador.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/app_bar_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/content_activity_administrador.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/content_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/fragment_animalesa.xml" value="0.22" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/fragment_inicioa.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/fragment_iniciou.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/layout/nav_header_activity_administrador.xml" value="0.1" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/menu/activity_admin_drawer.xml" value="0.19846153846153847" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/menu/menu_administrador.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/infor/AndroidStudioProjects/ProjectFinalComponentesV4/app/src/main/res/menu/usuario.xml" value="0.1" />
       </map>
     </option>
   </component>
