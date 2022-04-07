@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo7"
+    tools:context=".ActivityReportes">
+
+    <Button
+        android:id="@+id/btnVerReporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#B0423D3D"
+        android:text="Ver Reporte"
+        app:cornerRadius="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="40dp"
+        android:background="#41000000"
+        android:cornerRadius="240dp"
+        android:text="Reportes"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="296dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:background="#41000000"
+        android:cornerRadius="240dp"
+        android:text="Digite la fecha para generar reporte"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="158dp"
+        android:background="#4BFFFFFF"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:background="#A8050505"
+        android:text="ID TICKET"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="176dp"
+        android:background="#A8050505"
+        android:text="Nombre ZOO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="240dp"
+        android:background="#A8050505"
+        android:text="Nombre USER"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:background="#A8050505"
+        android:text="Boletos"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <EditText
+        android:id="@+id/idTicket"
+        android:layout_width="223dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:background="#A9000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerReporte" />
+
+    <EditText
+        android:id="@+id/NombreZOO"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:background="#8B0B0B0B"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#F6F4F4"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/idTicket" />
+
+    <EditText
+        android:id="@+id/nomUser"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:background="#99000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FDFCFC"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/NombreZOO" />
+
+    <EditText
+        android:id="@+id/cantidadB"
+        android:layout_width="205dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="19dp"
+        android:background="#B0020202"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/nomUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
