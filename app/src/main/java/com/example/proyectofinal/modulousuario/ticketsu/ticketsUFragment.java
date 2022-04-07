@@ -58,7 +58,7 @@ public class ticketsUFragment extends Fragment
 
         btnComprar.setOnClickListener(this::Comprar);
 
-
+        int a;
 
 
 
