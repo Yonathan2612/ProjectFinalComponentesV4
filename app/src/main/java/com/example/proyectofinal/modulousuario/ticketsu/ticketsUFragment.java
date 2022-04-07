@@ -22,14 +22,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.proyectofinal.ActivityIngresar;
-import com.example.proyectofinal.ActivityRegistrar;
 import com.example.proyectofinal.R;
 import com.example.proyectofinal.UsuarioActivity;
 import com.example.proyectofinal.databinding.FragmentTicketsuBinding;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,8 +34,6 @@ public class ticketsUFragment extends Fragment
 
     private FragmentTicketsuBinding binding;
     private EditText txtID, txtBoletos;
-    private Button btnComprar;
-    private Spinner SpinZoo;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -53,8 +47,8 @@ public class ticketsUFragment extends Fragment
 
         txtID = (EditText) root.findViewById(R.id.edtIdTicket);
         txtBoletos =(EditText) root.findViewById(R.id.edtCantidadBoletos);
-        SpinZoo =(Spinner) root.findViewById(R.id.spinnerZOO);
-        btnComprar = (Button) root.findViewById(R.id.btnComprarT);
+        Spinner spinZoo = (Spinner) root.findViewById(R.id.spinnerZOO);
+        Button btnComprar = (Button) root.findViewById(R.id.btnComprarT);
 
         btnComprar.setOnClickListener(this::Comprar);
 
@@ -135,7 +129,7 @@ public class ticketsUFragment extends Fragment
             @Override
             protected Map<String, String> getParams() throws AuthFailureError
             {
-                int a;
+
                 //con map se envian los parametros por el link con el methodo post
                 Map<String,String> params = new HashMap<String,String>();
                 params.put("fk_zoo","2152");
