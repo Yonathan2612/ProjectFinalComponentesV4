@@ -25,6 +25,7 @@ import com.example.proyectofinal.ActivityReportes;
 import com.example.proyectofinal.Modelo.CRUDzoo;
 import com.example.proyectofinal.R;
 import com.example.proyectofinal.databinding.FragmentTicketsaBinding;
+import com.example.proyectofinal.moduloadministrador.animalesa.animalesAFragment;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -70,17 +71,27 @@ public class ticketsaFragment extends Fragment {
                 }
             }
 //controlando que los campos cumplan con los requisitos de la bd y no se pasen de los caracteres
-            if(vacio)
-            {
+            if(vacio) {
                 Toast.makeText(getContext(), "Los campos no deben estar vacios", Toast.LENGTH_SHORT).show();
-            }else
-            {
+            }else if(ticketsaFragment.isNumeric(editTextPrecio.getText().toString())){
                 //llenando el objeto de animales enviandolo a la funcion insertar
                 CRUDticket ob = new CRUDticket();
                 ob.setprecio(editTextPrecio.getText().toString().trim());
                 ob.setnombre(editTextNom.getText().toString().trim());
                 insertarticket(ob);
             }
+            else
+            {
+                Toast.makeText(getContext(), "El campo precio debe ser numerico", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+    private static boolean isNumeric(String cadena){
+        try {
+            Integer.parseInt(cadena);
+            return true;
+        } catch (NumberFormatException nfe){
+            return false;
         }
     }
     private void insertarticket(CRUDticket ob)

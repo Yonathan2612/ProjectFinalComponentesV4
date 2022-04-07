@@ -88,8 +88,8 @@ public class animalesAFragment extends Fragment {
             if(vacio)
             {
                 Toast.makeText(getContext(), "Los campos no deben estar vacios", Toast.LENGTH_SHORT).show();
-            }else
-            {
+            }else if(animalesAFragment.isNumeric(txtIdentificacion.getText().toString())){
+                if(animalesAFragment.isNumeric(txtNacimiento.getText().toString()) && txtIdentificacion.getText().length()<5 || txtIdentificacion.getText().length()>3){
                 //llenando el objeto de animales enviandolo a la funcion insertar
                 CRUDanimales ob = new CRUDanimales();
                 ob.setnom_vulgar(txtNomVulgar.getText().toString().trim());
@@ -104,7 +104,21 @@ public class animalesAFragment extends Fragment {
                 ob.setpaisor(txtPaisor.getText().toString().trim());
                 ob.setcontinente(txtContinente.getText().toString().trim());
                 insertarAnimal(ob);
+                }else{
+                    Toast.makeText(getContext(), "Campo fecha nacimiento debe ser numerico y longitud de 4 digitos", Toast.LENGTH_SHORT).show();
+                }
+            }else
+            {
+                Toast.makeText(getContext(), "Campo identificación debe ser numerico", Toast.LENGTH_SHORT).show();
             }
+        }
+    }
+    private static boolean isNumeric(String cadena){
+        try {
+            Integer.parseInt(cadena);
+            return true;
+        } catch (NumberFormatException nfe){
+            return false;
         }
     }
     private void insertarAnimal(CRUDanimales ob)

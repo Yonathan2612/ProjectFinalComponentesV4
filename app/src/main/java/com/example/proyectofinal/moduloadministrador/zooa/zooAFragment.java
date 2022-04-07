@@ -22,6 +22,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.proyectofinal.Modelo.CRUDzoo;
 import com.example.proyectofinal.R;
 import com.example.proyectofinal.databinding.FragmentZooaBinding;
+import com.example.proyectofinal.moduloadministrador.animalesa.animalesAFragment;
 import com.example.proyectofinal.moduloadministrador.zooa.zooAFragment;
 
 import java.util.HashMap;
@@ -56,8 +57,7 @@ public class zooAFragment extends Fragment {
         {
             //comprobacion de que cualquier campo no este vacio
             String[] a = {editTextCiudad.getText().toString(),editTextNit.getText().toString()
-                    , editTextNomzoo.getText().toString(), editTextPresupuesto.getText().toString()
-                    , editTextTamaño.getText().toString()};
+                    , editTextNomzoo.getText().toString(), editTextTamaño.getText().toString()};
             boolean vacio=false;
             for (String aux:a)
             {
@@ -71,8 +71,8 @@ public class zooAFragment extends Fragment {
             if(vacio)
             {
                 Toast.makeText(getContext(), "Los campos no deben estar vacios", Toast.LENGTH_SHORT).show();
-            }else
-            {
+            }else if(zooAFragment.isNumeric(editTextTamaño.getText().toString())){
+                if(zooAFragment.isNumeric(editTextPresupuesto.getText().toString()) || editTextPresupuesto == null){
                 //llenando el objeto de animales enviandolo a la funcion insertar
                 CRUDzoo ob = new CRUDzoo();
                 ob.setnit(editTextNit.getText().toString().trim());
@@ -81,7 +81,22 @@ public class zooAFragment extends Fragment {
                 ob.settamano(editTextTamaño.getText().toString().trim());
                 ob.setpresupuesto_anual(editTextPresupuesto.getText().toString().trim());
                 insertarzoo(ob);
+                }else{
+                    Toast.makeText(getContext(), "El presupuesto debe ser numerico", Toast.LENGTH_SHORT).show();
+                }
             }
+            else
+            {
+                Toast.makeText(getContext(), "El tamaño debe ser numerico", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+    private static boolean isNumeric(String cadena){
+        try {
+            Integer.parseInt(cadena);
+            return true;
+        } catch (NumberFormatException nfe){
+            return false;
         }
     }
     private void insertarzoo(CRUDzoo ob)
