@@ -26,7 +26,6 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="40dp"
         android:background="#41000000"
-        android:cornerRadius="240dp"
         android:text="Reportes"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
@@ -40,7 +39,6 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="80dp"
         android:background="#41000000"
-        android:cornerRadius="240dp"
         android:text="Digite la fecha para generar reporte"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
@@ -57,7 +55,8 @@
         android:ems="10"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView28"
@@ -127,7 +126,7 @@
     <EditText
         android:id="@+id/NombreZOO"
         android:layout_width="211dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="28dp"
         android:background="#8B0B0B0B"
@@ -135,12 +134,13 @@
         android:inputType="textPersonName"
         android:textColor="#F6F4F4"
         app:layout_constraintStart_toEndOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/idTicket" />
+        app:layout_constraintTop_toBottomOf="@+id/idTicket"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/nomUser"
         android:layout_width="210dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
         android:background="#99000000"
@@ -153,7 +153,7 @@
     <EditText
         android:id="@+id/cantidadB"
         android:layout_width="205dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginStart="67dp"
         android:layout_marginTop="19dp"
         android:background="#B0020202"
@@ -161,6 +161,7 @@
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/textView31"
-        app:layout_constraintTop_toBottomOf="@+id/nomUser" />
+        app:layout_constraintTop_toBottomOf="@+id/nomUser"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
