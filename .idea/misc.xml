@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/activity_reportes.xml" value="0.12" />
+        <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/activity_reportes.xml" value="0.25" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_animalesa.xml" value="0.20729166666666668" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_animalesu.xml" value="0.20729166666666668" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_inicioa.xml" value="0.20729166666666668" />
@@ -11,6 +11,10 @@
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_ticketsa.xml" value="0.22" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_ticketsu.xml" value="0.1381340579710145" />
         <entry key="..\:/Users/Usert/AndroidStudioProjects/ProyectoFinalV3/app/src/main/res/layout/fragment_zoou.xml" value="0.20729166666666668" />
+        <entry key="app/src/main/res/layout/fragment_inicioa.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_zooa.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_zoou.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/inicio_administrador.xml" value="0.3591485507246377" />
       </map>
     </option>
   </component>
