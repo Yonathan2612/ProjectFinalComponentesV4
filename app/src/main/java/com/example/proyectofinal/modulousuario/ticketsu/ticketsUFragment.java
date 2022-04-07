@@ -135,6 +135,7 @@ public class ticketsUFragment extends Fragment
             @Override
             protected Map<String, String> getParams() throws AuthFailureError
             {
+                int a;
                 //con map se envian los parametros por el link con el methodo post
                 Map<String,String> params = new HashMap<String,String>();
                 params.put("fk_zoo","2152");
