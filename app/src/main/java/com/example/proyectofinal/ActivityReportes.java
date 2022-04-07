@@ -35,13 +35,10 @@ public class ActivityReportes extends AppCompatActivity {
     private void onClick(View v) {
         int id=v.getId();
         if(id==R.id.btnVerReporte){
-            idticket.setText("1");
-            NombreZoo.setText("Zoologico Nacional");
-            nomUser.setText("Victor Julio Huertas Gomez");
-            cantidadB.setText("7");
 
-            //String fecha=txtFecha.getText().toString().trim();
-           //verReporte(fecha);
+
+            String fecha=txtFecha.getText().toString().trim();
+           verReporte(fecha);
         }
     }
 
