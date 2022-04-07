@@ -21,20 +21,20 @@ import java.util.Map;
 
 public class CRUDanimales extends animalesAFragment
 {
-    private String nom_vulgar,nom_cientifico,txtfamilia,txtextincion,txtidentificacion,txtespecie,txtgenero,txtnacimiento,txtzoo,txtpaisor,txtcontinente;
+    private String nom_vulgar,nom_cientifico,familia,extincion,identificacion,especie,genero,nacimiento,zoo,paisor,continente;
     public CRUDanimales(String nom_vulgar, String nom_cientifico, String txtfamilia, String txtextincion, String txtidentificacion, String txtespecie, String txtgenero, String txtnacimiento, String txtzoo, String txtpaisor, String txtcontinente)
     {
         this.nom_vulgar = nom_vulgar;
         this.nom_cientifico = nom_cientifico;
-        this.txtfamilia = txtfamilia;
-        this.txtextincion = txtextincion;
-        this.txtidentificacion = txtidentificacion;
-        this.txtespecie = txtespecie;
-        this.txtgenero = txtgenero;
-        this.txtnacimiento = txtnacimiento;
-        this.txtzoo = txtzoo;
-        this.txtpaisor = txtpaisor;
-        this.txtcontinente = txtcontinente;
+        this.familia = txtfamilia;
+        this.extincion = txtextincion;
+        this.identificacion = txtidentificacion;
+        this.especie = txtespecie;
+        this.genero = txtgenero;
+        this.nacimiento = txtnacimiento;
+        this.zoo = txtzoo;
+        this.paisor = txtpaisor;
+        this.continente = txtcontinente;
     }
     public CRUDanimales(){ }
 
@@ -60,8 +60,6 @@ public class CRUDanimales extends animalesAFragment
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
-
             }
         }
 
@@ -72,15 +70,15 @@ public class CRUDanimales extends animalesAFragment
                 Map<String,String> params = new HashMap<String,String>();
                 params.put("nom_vulgar",ob.getnom_vulgar());
                 params.put("nom_cientifico",ob.getnom_cientifico());
-                params.put("txtfamilia",ob.gettxtfamilia());
-                params.put("txtextincion",ob.gettxtextincion());
-                params.put("txtidentificacion",ob.gettxtidentificacion());
-                params.put("txtespecie",ob.gettxtespecie());
-                params.put("txtgenero",ob.gettxtgenero());
-                params.put("txtnacimiento",ob.gettxtnacimiento());
-                params.put("txtzoo",ob.gettxtzoo());
-                params.put("txtpaisor",ob.gettxtpaisor());
-                params.put("txtcontinente",ob.gettxtcontinente());
+                params.put("familia",ob.getfamilia());
+                params.put("extincion",ob.getextincion());
+                params.put("identificacion",ob.getidentificacion());
+                params.put("especie",ob.getespecie());
+                params.put("genero",ob.getgenero());
+                params.put("nacimiento",ob.getnacimiento());
+                params.put("zoo",ob.getzoo());
+                params.put("paisor",ob.getpaisor());
+                params.put("continente",ob.getcontinente());
 
                 return params;
             }
@@ -240,15 +238,15 @@ public class CRUDanimales extends animalesAFragment
     {
         return "nom_vulgar:"+this.getnom_vulgar()+"\n" +
                 "nom_cientifico: "+this.getnom_cientifico()+"\n" +
-                "txtfamilia: "+this.gettxtfamilia()+"\n" +
-                "txtextincion: "+this.gettxtextincion()+"\n"+
-        "txtidentificacion:"+this.gettxtidentificacion()+"\n" +
-                "txtespecie: "+this.gettxtespecie()+"\n" +
-                "txtgenero: "+this.gettxtgenero()+"\n" +
-                "txtnacimiento: "+this.gettxtnacimiento()+"\n"+
-        "txtzoo:"+this.gettxtzoo()+"\n" +
-                "txtpaisor: "+this.gettxtpaisor()+"\n" +
-                "txtcontinente: "+this.gettxtcontinente()+"\n" ;
+                "familia: "+this.getfamilia()+"\n" +
+                "extincion: "+this.getextincion()+"\n"+
+        "identificacion:"+this.getidentificacion()+"\n" +
+                "especie: "+this.getespecie()+"\n" +
+                "genero: "+this.getgenero()+"\n" +
+                "nacimiento: "+this.getnacimiento()+"\n"+
+        "oo:"+this.getzoo()+"\n" +
+                "paisor: "+this.getpaisor()+"\n" +
+                "continente: "+this.getcontinente()+"\n" ;
     }
 
     public String getnom_vulgar() {
@@ -267,73 +265,73 @@ public class CRUDanimales extends animalesAFragment
         this.nom_cientifico = nom_cientifico;
     }
 
-    public String gettxtfamilia() {
-        return txtfamilia;
+    public String getfamilia() {
+        return familia;
     }
 
-    public void settxtfamilia(String txtfamilia) {
-        this.txtfamilia = txtfamilia;
+    public void setfamilia(String familia) {
+        this.familia = familia;
     }
 
-    public String gettxtextincion() {
-        return txtextincion;
+    public String getextincion() {
+        return extincion;
     }
 
-    public void settxtextincion(String txtextincion) {
-        this.txtextincion = txtextincion;
+    public void setextincion(String extincion) {
+        this.extincion = extincion;
     }
 
-    public String gettxtidentificacion() {
-        return txtidentificacion;
+    public String getidentificacion() {
+        return identificacion;
     }
 
-    public void settxtidentificacion(String txtidentificacion) {this.txtidentificacion = txtidentificacion;}
+    public void setidentificacion(String identificacion) {this.identificacion = identificacion;}
 
-    public String gettxtespecie() {
-        return txtespecie;
+    public String getespecie() {
+        return especie;
     }
 
-    public void settxtespecie(String txtespecie) {
-        this.txtespecie = txtespecie;
+    public void setespecie(String especie) {
+        this.especie = especie;
     }
 
-    public String gettxtgenero() {
-        return txtgenero;
+    public String getgenero() {
+        return genero;
     }
 
-    public void settxtgenero(String txtgenero) {
-        this.txtgenero = txtgenero;
+    public void setgenero(String genero) {
+        this.genero = genero;
     }
 
-    public String gettxtnacimiento() {
-        return txtnacimiento;
+    public String getnacimiento() {
+        return nacimiento;
     }
 
-    public void settxtnacimiento(String txtnacimiento) {
-        this.txtnacimiento = txtnacimiento;
+    public void setnacimiento(String nacimiento) {
+        this.nacimiento = nacimiento;
     }
 
-    public String gettxtzoo() {
-        return txtzoo;
+    public String getzoo() {
+        return zoo;
     }
 
-    public void settxtzoo(String txtzoo) {
-        this.txtzoo = txtzoo;
+    public void setzoo(String zoo) {
+        this.zoo = zoo;
     }
 
-    public String gettxtpaisor() {
-        return txtpaisor;
+    public String getpaisor() {
+        return paisor;
     }
 
-    public void settxtpaisor(String txtpaisor) {
-        this.txtpaisor = txtpaisor;
+    public void setpaisor(String paisor) {
+        this.paisor = paisor;
     }
 
-    public String gettxtcontinente() {
-        return txtcontinente;
+    public String getcontinente() {
+        return continente;
     }
 
-    public void settxtcontinente(String txtcontinente) {
-        this.txtcontinente = txtcontinente;
+    public void setcontinente(String continente) {
+        this.continente = continente;
     }
 }

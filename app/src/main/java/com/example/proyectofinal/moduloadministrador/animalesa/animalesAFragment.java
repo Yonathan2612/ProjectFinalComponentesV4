@@ -94,15 +94,15 @@ public class animalesAFragment extends Fragment {
                 CRUDanimales ob = new CRUDanimales();
                 ob.setnom_vulgar(txtNomVulgar.getText().toString().trim());
                 ob.setnom_cientifico(txtNomCientifico.getText().toString().trim());
-                ob.settxtfamilia(txtFamilia.getText().toString().trim());
-                ob.settxtespecie(txtEspecie.getText().toString().trim());
-                ob.settxtextincion(txtExtincion.getText().toString().trim());
-                ob.settxtidentificacion(txtIdentificacion.getText().toString().trim());
-                ob.settxtnacimiento(txtNacimiento.getText().toString().trim());
-                ob.settxtgenero(txtGenero.getText().toString().trim());
-                ob.settxtzoo(txtZoo.getText().toString().trim());
-                ob.settxtpaisor(txtPaisor.getText().toString().trim());
-                ob.settxtcontinente(txtContinente.getText().toString().trim());
+                ob.setfamilia(txtFamilia.getText().toString().trim());
+                ob.setespecie(txtEspecie.getText().toString().trim());
+                ob.setextincion(txtExtincion.getText().toString().trim());
+                ob.setidentificacion(txtIdentificacion.getText().toString().trim());
+                ob.setnacimiento(txtNacimiento.getText().toString().trim());
+                ob.setgenero(txtGenero.getText().toString().trim());
+                ob.setzoo(txtZoo.getText().toString().trim());
+                ob.setpaisor(txtPaisor.getText().toString().trim());
+                ob.setcontinente(txtContinente.getText().toString().trim());
                 insertarAnimal(ob);
             }
         }
@@ -142,15 +142,15 @@ public class animalesAFragment extends Fragment {
                 Map<String,String> params = new HashMap<String,String>();
                 params.put("nom_vulgar",ob.getnom_vulgar());
                 params.put("nom_cientifico",ob.getnom_cientifico());
-                params.put("txtfamilia",ob.gettxtfamilia());
-                params.put("txtextincion",ob.gettxtextincion());
-                params.put("txtidentificacion",ob.gettxtidentificacion());
-                params.put("txtespecie",ob.gettxtespecie());
-                params.put("txtgenero",ob.gettxtgenero());
-                params.put("txtnacimiento",ob.gettxtnacimiento());
-                params.put("txtzoo",ob.gettxtzoo());
-                params.put("txtpaisor",ob.gettxtpaisor());
-                params.put("txtcontinente",ob.gettxtcontinente());
+                params.put("familia",ob.getfamilia());
+                params.put("extincion",ob.getextincion());
+                params.put("identificacion",ob.getidentificacion());
+                params.put("especie",ob.getespecie());
+                params.put("genero",ob.getgenero());
+                params.put("nacimiento",ob.getnacimiento());
+                params.put("zoo",ob.getzoo());
+                params.put("paisor",ob.getpaisor());
+                params.put("continente",ob.getcontinente());
 
                 return params;
             }
