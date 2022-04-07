@@ -23,7 +23,7 @@
         tools:src="@drawable/corner_image" />
 
     <EditText
-        android:id="@+id/editTextMoneda"
+        android:id="@+id/editTextContraseña"
         android:layout_width="245dp"
         android:layout_height="33dp"
         android:layout_marginBottom="20dp"
@@ -56,14 +56,14 @@
         android:text="@string/precio"
         android:textColor="#B4B4B4"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextMoneda"
+        app:layout_constraintBottom_toTopOf="@+id/editTextContraseña"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextZoo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsuario"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextZoo"
+        android:id="@+id/editTextUsuario"
         android:layout_width="245dp"
         android:layout_height="33dp"
         android:layout_marginTop="20dp"
