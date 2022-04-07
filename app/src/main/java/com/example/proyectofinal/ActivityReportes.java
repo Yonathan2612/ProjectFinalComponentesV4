@@ -17,23 +17,24 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class ActivityReportes extends AppCompatActivity {
-    Button btnVerReportes;
+    Button btnVerReporte;
     TextView txtFecha,idticket,NombreZoo,nomUser,cantidadB;
     RequestQueue requestQueue;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reportes);
-    btnVerReportes=(Button) findViewById(R.id.btnVerReporte);
+    btnVerReporte=(Button) findViewById(R.id.btnVerReporte);
     txtFecha=(TextView) findViewById(R.id.txtDate);
     idticket=(TextView) findViewById(R.id.idTicket);
     NombreZoo=(TextView) findViewById(R.id.NombreZOO);
     nomUser=(TextView) findViewById(R.id.nomUser);
     cantidadB=(TextView) findViewById(R.id.cantidadB);
+    btnVerReporte.setOnClickListener(this::onClick);
     }
 
     private void onClick(View v) {
         int id=v.getId();
-        if(id==R.id.btnBuscarAnimal){
+        if(id==R.id.btnVerReporte){
             idticket.setText("1");
             NombreZoo.setText("Zoologico Nacional");
             nomUser.setText("Victor Julio Huertas Gomez");
