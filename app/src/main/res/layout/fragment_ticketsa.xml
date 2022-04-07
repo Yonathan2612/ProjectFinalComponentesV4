@@ -96,6 +96,7 @@
         android:paddingLeft="10dp"
         android:text="@string/buscar_zoo"
         android:textColor="#B4B4B4"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
