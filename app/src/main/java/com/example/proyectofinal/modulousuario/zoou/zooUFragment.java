@@ -57,7 +57,7 @@ public class zooUFragment extends Fragment {
 
 
     private void verZOO(String Nom){
-        String URL="http://192.168.1.109/compbd/mostrarZoo.php?nombre="+Nom;
+        String URL="https://compbdzoo.000webhostapp.com/mostrarZOO.php?nombre="+Nom;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET, URL, null,
                 new Response.Listener<JSONObject>() {

@@ -11,40 +11,39 @@
         android:id="@+id/edtDocumento"
         android:layout_width="304dp"
         android:layout_height="58dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="88dp"
         android:background="#81FBFBFB"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Digite su documento"
+        android:hint="Digite su documento"
+        android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/edtDocumento2"
+        android:layout_width="304dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:background="#81FBFBFB"
+        android:ems="10"
+        android:hint="Digite la cantidad de boletos"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerZOO" />
 
     <Spinner
         android:id="@+id/spinnerZOO"
         android:layout_width="329dp"
         android:layout_height="50dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
         android:background="#C3DCC9C9"
         android:entries="@array/SpinnerTicketsA"
         android:minHeight="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtFecha" />
-
-    <EditText
-        android:id="@+id/edtFecha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="29dp"
-        android:background="#B2DDD3D3"
-        android:ems="10"
-        android:inputType="date"
-        android:minHeight="48dp"
-        android:text="Digite la fecha"
-        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtDocumento" />
 
@@ -52,12 +51,25 @@
         android:id="@+id/btnComprarT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="61dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#B0423D3D"
         android:text="Comprar"
         app:cornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerZOO" />
+        app:layout_constraintTop_toBottomOf="@+id/edtDocumento2" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#D5C4C4"
+        android:fontFamily="sans-serif-condensed"
+        android:text="COMPRA DE TICKETS"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="58dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

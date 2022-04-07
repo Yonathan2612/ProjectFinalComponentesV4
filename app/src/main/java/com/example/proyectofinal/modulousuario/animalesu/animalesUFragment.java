@@ -54,7 +54,7 @@ public class animalesUFragment extends Fragment
 
 
     private void verAnimal(String Nom){
-        String URL="http://192.168.1.109/compbd/mostrarAnimales.php?nombre="+Nom;
+        String URL="https://compbdzoo.000webhostapp.com/mostrarAnimales.php?nombre="+Nom;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET, URL, null,
                 new Response.Listener<JSONObject>() {
