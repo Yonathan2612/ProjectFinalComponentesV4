@@ -218,7 +218,6 @@ public static List<CRUDusuario> lista = new List<CRUDusuario>() {
                     ob.setTel(edtTel.getText().toString().trim());
                     insertarUsuario(ob);
 
-
             }
             //direccionando el boton volver al login
         }else if(id==R.id.btnVolverR)

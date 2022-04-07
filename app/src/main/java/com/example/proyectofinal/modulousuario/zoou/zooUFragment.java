@@ -47,7 +47,8 @@ public class zooUFragment extends Fragment {
 
     private void onClick(View v) {
         int id=v.getId();
-        if(id==R.id.btnBuscarZOO){
+        if(id==R.id.btnBuscarZOO)
+        {
             String nombre=nomZOO.getText().toString().trim();
             verZOO(nombre);
         }
